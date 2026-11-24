@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mishelle: cuadros personalizados y pintados a mano en Rosario, Santa Fe. El arte de hacer algo único.">
+  <title>Mishelle | El arte de hacer algo único</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">Piezas hechas a mano · Personalizá tu próximo cuadro · Rosario, Santa Fe</div>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Mishelle, inicio"><img src="logo M.png" alt="Mishelle"></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
+    <nav id="mainNav">
+      <a href="#catalogo">Catálogo</a><a href="#personaliza">Personalizá</a><a href="#packaging">Packaging</a><a href="#nosotros">La marca</a><a href="#contacto">Contacto</a>
+    </nav>
+    <button class="cart-button" id="openCart">Carrito <span id="cartCount">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow">ARTE · DISEÑO · HECHO A MANO</p>
+        <h1>El arte de hacer<br><em>algo único.</em></h1>
+        <p class="hero-text">Cuadros personalizados que transforman tus ideas, recuerdos y espacios en piezas creadas especialmente para vos.</p>
+        <div class="hero-actions"><a class="btn btn-dark" href="#catalogo">Explorar catálogo</a><a class="text-link" href="#personaliza">Crear mi cuadro <span>↗</span></a></div>
+        <div class="hero-note"><span class="dot"></span> Cada pieza comienza con una idea tuya.</div>
+      </div>
+      <div class="hero-art">
+        <div class="hero-image-frame"><img src="cuadro5.jpg" alt="Cuadro Personalizado"></div>
+        <div class="floating-note"><span>01 / 04</span><strong>Arte que se siente propio</strong></div>
+        <div class="round-stamp">HECHO<br>A MANO</div>
+      </div>
+    </section>
+
+    <section class="ticker"><span>CREATIVIDAD</span><b>✳</b><span>DETALLES</span><b>✳</b><span>PERSONALIDAD</span><b>✳</b><span>ARTE</span><b>✳</b><span>CREATIVIDAD</span></section>
+
+    <section class="section intro-grid" id="nosotros">
+      <div><p class="eyebrow">01 — SOBRE MISHELLE</p><h2>No es solo un cuadro.<br><em>Es una parte de vos.</em></h2></div>
+      <div class="intro-text"><p>Mishelle es un emprendimiento de cuadros personalizados y pintados a mano. Creamos piezas decorativas pensadas para acompañar tu estilo, darle vida a tus ambientes y convertir una idea en algo tangible.</p><p>Trabajamos cada pedido de manera artesanal: escuchamos tu propuesta, elegimos juntos los colores y diseñamos una pieza que tenga tu identidad.</p><a class="text-link" href="#proceso">Conocé cómo trabajamos ↗</a></div>
+    </section>
+
+    <section class="section catalog-section" id="catalogo">
+      <div class="section-heading"><div><p class="eyebrow">02 — PIEZAS Y COLECCIONES</p><h2>Encontrá tu <em>inspiración.</em></h2><p class="muted">Modelos de referencia: cada diseño puede adaptarse a tus gustos.</p></div><a class="text-link" href="#personaliza">¿Tenés otra idea? Personalizá ↗</a></div>
+      <div class="filters" id="filters"><button class="filter active" data-filter="todos">Todos</button><button class="filter" data-filter="botanico">Botánicos</button><button class="filter" data-filter="abstracto">Abstractos</button><button class="filter" data-filter="minimalista">Minimalistas</button></div>
+      <div class="product-grid" id="productGrid">
+        <article class="product-card" data-category="botanico">
+          <div class="product-image"><img src="cuadro1.jpg" alt="Cuadro Personalizado"><span class="tag">Más elegido</span><button class="quick-view" data-product="1">Ver detalle ↗</button></div>
+          <div class="product-info"><div><h3>Cuadro Personalizado</h3><p>Plantas y tonos naturales · 30 × 40 cm</p></div><strong>$28.000</strong></div><button class="add-cart" data-id="1">Agregar al carrito <span>+</span></button>
+        </article>
+        <article class="product-card" data-category="abstracto">
+          <div class="product-image"><img src="cuadro2.jpg" alt="Cuadro Personalizado"><span class="tag">Edición artesanal</span><button class="quick-view" data-product="2">Ver detalle ↗</button></div>
+          <div class="product-info"><div><h3>Cuadro Personalizado</h3><p>Cálido · 40 × 50 cm</p></div><strong>$34.000</strong></div><button class="add-cart" data-id="2">Agregar al carrito <span>+</span></button>
+        </article>
+        <article class="product-card" data-category="minimalista">
+          <div class="product-image"><img src="cuadro3.jpg" alt="Cuadro Personalizado"><button class="quick-view" data-product="3">Ver detalle ↗</button></div>
+          <div class="product-info"><div><h3>Cuadro Personalizado</h3><p>Perro salchicha · 30 × 40 cm</p></div><strong>$25.000</strong></div><button class="add-cart" data-id="3">Agregar al carrito <span>+</span></button>
+        </article>
+        <article class="product-card" data-category="botanico">
+          <div class="product-image"><img src="cuadro4.jpg" alt="Cuadro Personalizado"><span class="tag">Nuevo</span><button class="quick-view" data-product="4">Ver detalle ↗</button></div>
+          <div class="product-info"><div><h3>Cuadro Personalizado</h3><p>Flores delicadas · 40 × 50 cm</p></div><strong>$32.000</strong></div><button class="add-cart" data-id="4">Agregar al carrito <span>+</span></button>
+        </article>
+      </div>
+      <p class="small-note">Los precios son orientativos para esta demostración escolar. El valor final se confirma según tamaño, materiales y complejidad del diseño.</p>
+    </section>
+
+    <section class="promo-band">
+      <div><p class="eyebrow">UN DETALLE PARA EMPEZAR</p><h2>Tu primera pieza<br><em>tiene un mimo.</em></h2><p>10% de descuento en tu primer pedido personalizado durante el lanzamiento.</p></div>
+      <div class="promo-side"><div class="promo-number">10<span>%</span></div><p>DESCUENTO DE LANZAMIENTO</p><a class="btn btn-light" href="#personaliza">Quiero mi descuento</a><small>Promoción ilustrativa para el proyecto.</small></div>
+    </section>
+
+    <section class="section customize" id="personaliza">
+      <div class="customize-copy"><p class="eyebrow">03 — TU IDEA, TU CUADRO</p><h2>Lo imaginás.<br><em>Lo hacemos arte.</em></h2><p>Contanos qué tenés en mente. Podés elegir el tamaño, la paleta de colores, el estilo y los detalles que querés incluir.</p>
+        <ul class="check-list"><li>Diseños abstractos, florales, paisajes y frases.</li><li>Opciones en lienzo o madera MDF.</li><li>Colores y medidas a elección.</li><li>Una pieza realizada especialmente para vos.</li></ul>
+        <a class="btn btn-dark" href="https://wa.me/543415978662?text=Hola%20Mishelle!%20Quiero%20consultar%20por%20un%20cuadro%20personalizado." target="_blank" rel="noopener">Consultar por WhatsApp ↗</a>
+      </div>
+      <div class="customize-card"><img src="idea cuadro.jpg" alt="Inspiración de cuadro floral para personalizar"><div class="customize-caption"><span>HECHO A MANO</span><strong>Una pieza, infinitas posibilidades.</strong></div></div>
+    </section>
+
+    <section class="section process" id="proceso"><div class="section-heading"><div><p class="eyebrow">04 — DEL PRIMER MENSAJE A TU PARED</p><h2>Así nace cada <em>pieza.</em></h2></div></div>
+      <div class="steps"><article><span>01</span><h3>Nos contás</h3><p>Recibimos tu idea, referencias, medidas y preferencias.</p></article><article><span>02</span><h3>Diseñamos</h3><p>Definimos juntos la propuesta, los colores y los materiales.</p></article><article><span>03</span><h3>Creamos</h3><p>Pintamos a mano, dejamos secar y protegemos la obra con barniz.</p></article><article><span>04</span><h3>Preparamos</h3><p>Embalamos con cuidado y coordinamos la entrega en Rosario.</p></article></div>
+    </section>
+
+    <section class="packaging-section" id="packaging">
+      <div class="packaging-copy"><p class="eyebrow">05 — UN包装 ESPECIAL</p><h2>El arte también está<br><em>en los detalles.</em></h2><p>Cada cuadro se entrega en una caja personalizada Mishelle Art, preparada para cuidar la pieza y convertir la entrega en una experiencia especial.</p><ul class="check-list"><li>Caja de cartón decorada y pintada a mano.</li><li>Papel de seda y protección interior para evitar marcas.</li><li>Tarjeta de agradecimiento.</li><li>Presentación lista para regalar.</li></ul><div class="rotate-hint">↔ Arrastrá para girar la caja · También podés usar los botones</div><div class="rotate-buttons"><button id="rotateLeft" aria-label="Girar a la izquierda">↶</button><button id="rotateRight" aria-label="Girar a la derecha">↷</button><button id="resetBox">Reiniciar vista</button></div></div>
+      <div class="box-stage" id="boxStage" aria-label="Modelo 3D interactivo de la caja Mishelle"><div class="box3d" id="box3d">
+        <div class="box-face front"><span class="box-brand">mishelle<span>art</span></span><small>EL ARTE DE HACER ALGO ÚNICO</small></div>
+        <div class="box-face back"><span class="back-mark">M.</span><small>Hecho a mano en Rosario</small></div>
+        <div class="box-face right"><span>mishelle art</span></div><div class="box-face left"><span>mishelle art</span></div>
+        <div class="box-face top"><span>✳</span></div><div class="box-face bottom"></div>
+      </div><div class="box-shadow"></div></div>
+    </section>
+
+    <section class="section calculator-section" id="calculadora">
+      <div class="calculator-intro"><p class="eyebrow">06 — HERRAMIENTA TECNOLÓGICA</p><h2>Calculá el precio<br><em>de tu creación.</em></h2><p>La calculadora ayuda a estimar cuánto cuesta producir un cuadro y qué precio de venta permite obtener una ganancia.</p><div class="calc-explainer"><strong>¿Qué información recibe?</strong><span>Materiales, insumos, packaging, horas de trabajo y porcentaje de ganancia.</span><strong>¿Qué calcula?</strong><span>Suma los costos y agrega el margen de ganancia elegido.</span><strong>¿Qué resultados entrega?</strong><span>Costo total, precio sugerido y ganancia estimada.</span></div></div>
+      <form class="calculator" id="costForm">
+        <div class="calc-title"><span>CALCULADORA MISHELLE</span><span class="calc-icon">＋</span></div>
+        <label>Materias primas ($)<input type="number" id="materials" min="0" value="8500" step="100"></label>
+        <label>Insumos ($)<input type="number" id="supplies" min="0" value="1800" step="100"></label>
+        <label>Packaging ($)<input type="number" id="packagingCost" min="0" value="2200" step="100"></label>
+        <div class="two-fields"><label>Horas de trabajo<input type="number" id="hours" min="0" value="3" step="0.5"></label><label>Valor por hora ($)<input type="number" id="hourRate" min="0" value="2500" step="100"></label></div>
+        <label>Ganancia deseada: <b id="profitLabel">35%</b><input type="range" id="profit" min="0" max="100" value="35"></label>
+        <div class="calc-results"><div><span>Costo total</span><strong id="totalCost">$ 20.000</strong></div><div><span>Precio sugerido</span><strong id="suggestedPrice">$ 27.000</strong></div><div><span>Ganancia estimada</span><strong id="estimatedProfit">$ 7.000</strong></div></div>
+        <p class="calc-disclaimer">Ejemplo editable. No incluye impuestos ni costos extraordinarios; ajustá los valores a cada pedido.</p>
+        <button class="btn btn-dark full" type="button" id="resetCalc">Restablecer ejemplo</button>
+      </form>
+    </section>
+
+    <section class="section brand-values"><div class="value-main"><p class="eyebrow">07 — NUESTRA IDENTIDAD</p><h2>Creaciones con<br><em>identidad propia.</em></h2><p>Una marca cálida, artística y cercana. Nuestra identidad combina tonos suaves con marrón chocolate y terracota para transmitir creatividad, dedicación y calidez.</p></div><div class="palette"><div style="--swatch:#F7F2E9"><span>#F7F2E9</span></div><div style="--swatch:#E8DCCB"><span>#E8DCCB</span></div><div style="--swatch:#D6B5AD"><span>#D6B5AD</span></div><div style="--swatch:#604638"><span>#604638</span></div><div style="--swatch:#B97962"><span>#B97962</span></div></div><div class="brand-details"><div><b>Logo</b><span>La M nace del movimiento de un pincel, símbolo de creación y pintura.</span></div><div><b>Tipografía</b><span>El logotipo original se utiliza como imagen de marca; para textos se usa una combinación editorial y moderna.</span></div><div><b>Estilo visual</b><span>Artístico, delicado, minimalista y moderno.</span></div></div></section>
+
+    <section class="section digital-section"><div><p class="eyebrow">08 — PRESENCIA DIGITAL Y COMUNICACIÓN</p><h2>Nos encontramos<br><em>en lo digital.</em></h2><p>Las redes y herramientas digitales permiten mostrar los trabajos, recibir pedidos, responder consultas y organizar cada venta.</p></div><div class="digital-grid">
+      <article><span class="digital-icon">◎</span><h3>Instagram</h3><p>@mishelle_art</p><a href="https://www.instagram.com/mishelle_art/" target="_blank" rel="noopener">Ver perfil ↗</a></article>
+      <article><span class="digital-icon">◔</span><h3>WhatsApp</h3><p>341 597 8662</p><a href="https://wa.me/543415978662" target="_blank" rel="noopener">Enviar mensaje ↗</a></article>
+      <article><span class="digital-icon">▤</span><h3>Catálogo</h3><p>Modelos, tamaños, opciones y precios de referencia.</p><a href="#catalogo">Explorar catálogo ↗</a></article>
+      <article><span class="digital-icon">✉</span><h3>Formulario de pedido</h3><p>Contanos cómo imaginás tu cuadro.</p><a href="#pedido">Completar formulario ↗</a></article>
+    </div></section>
+
+    <section class="section order-section" id="pedido"><div class="order-copy"><p class="eyebrow">09 — FORMULARIO DE PEDIDO</p><h2>Empecemos con<br><em>tu idea.</em></h2><p>Completá estos datos y se abrirá WhatsApp con tu consulta lista para enviar.</p><div class="location-line">⌖ Rosario, Santa Fe, Argentina</div></div>
+      <form id="orderForm" class="order-form"><div class="two-fields"><label>Tu nombre<input required id="customerName" placeholder="Nombre y apellido"></label><label>WhatsApp<input id="customerPhone" placeholder="Tu número"></label></div><label>¿Qué tipo de cuadro querés?<select id="orderType"><option>Cuadro personalizado</option><option>Botánico / floral</option><option>Abstracto</option><option>Minimalista</option><option>Frase o ilustración</option></select></label><div class="two-fields"><label>Tamaño aproximado<select id="orderSize"><option>30 × 40 cm</option><option>40 × 50 cm</option><option>50 × 70 cm</option><option>A definir</option></select></label><label>Superficie<select id="orderSurface"><option>Lienzo</option><option>Madera MDF</option><option>A definir</option></select></label></div><label>Contanos tu idea<textarea id="orderDetails" rows="4" placeholder="Colores, referencias, frase, ambiente donde irá..."></textarea></label><button class="btn btn-dark full" type="submit">Enviar pedido por WhatsApp ↗</button><p class="small-note">El envío del formulario no confirma una compra. El pedido se coordina personalmente.</p></form>
+    </section>
+
+    <section class="section marketing-section"><div><p class="eyebrow">10 — DIFUSIÓN Y PROMOCIONES</p><h2>Una marca que se<br><em>comparte.</em></h2></div><div class="marketing-list"><article><b>Publicidad</b><p>Fotos de cuadros en ambientes reales, reels del proceso de pintura, videos del packaging y publicaciones de trabajos terminados.</p></article><article><b>Promociones</b><p>Descuento de lanzamiento, beneficio por comprar dos cuadros y promociones especiales en fechas como cumpleaños o celebraciones.</p></article><article><b>Estrategia de comunicación</b><p>Comunicación cercana y visual: mostrar el detrás de escena, responder consultas con claridad, publicar novedades y compartir opiniones de clientes con su permiso.</p></article><article><b>Canales de venta</b><p>Instagram para inspirar y mostrar productos; WhatsApp para asesorar, tomar pedidos y coordinar entregas.</p></article></div></section>
+
+    <section class="section formalization"><div><p class="eyebrow">11 — ORGANIZACIÓN DEL EMPRENDIMIENTO</p><h2>Detrás de cada obra,<br><em>un proyecto.</em></h2></div><div><p>Para organizar Mishelle se registran los costos de materiales, el tiempo de producción, los pedidos y las ventas. Para una actividad comercial formal se deberá consultar la inscripción que corresponda, las obligaciones de monotributo y la emisión de comprobantes ante ARCA, según la situación fiscal.</p><p class="muted">La formalización y facturación se completarán con los contenidos de la materia correspondiente.</p></div></section>
+
+    <section class="final-cta" id="contacto"><img src="TIPOGRAFIAA.png" alt="Mishelle"><p>El arte de hacer algo único.</p><a class="btn btn-light" href="https://wa.me/543415978662?text=Hola%20Mishelle!%20Quiero%20hacer%20una%20consulta." target="_blank" rel="noopener">Hablemos de tu idea ↗</a><div class="final-location">Rosario · Santa Fe · Argentina</div></section>
+  </main>
+
+  <footer><span>© 2026 MISHELLE ART</span><span>Hecho con creatividad y dedicación.</span><a href="#inicio">Volver arriba ↑</a></footer>
+
+  <div class="cart-overlay" id="cartOverlay"></div><aside class="cart-drawer" id="cartDrawer" aria-label="Carrito de compras"><div class="cart-head"><h2>Tu carrito</h2><button id="closeCart" aria-label="Cerrar carrito">×</button></div><div id="cartItems" class="cart-items"><p class="empty-cart">Todavía no agregaste productos.</p></div><div class="cart-foot"><div class="cart-total"><span>Total estimado</span><strong id="cartTotal">$ 0</strong></div><button class="btn btn-dark full" id="checkout">Continuar por WhatsApp ↗</button><small>El precio final se confirma al coordinar el pedido.</small></div></aside>
+  <div class="toast" id="toast">Producto agregado al carrito</div>
+  <script src="script.js"></script>
+</body>
+</html>
